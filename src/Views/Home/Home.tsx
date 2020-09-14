@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import styled, { keyframes } from "styled-components";
 import Crown from "../../Assets/crown.png";
+import { DropDown, Button } from "@gavive/empire";
 
 
 const bounce = keyframes`
@@ -55,17 +56,13 @@ const Shadow = styled.div`
 const HomeWrapper = styled.div`
   height: 100vh;
   width: 100vw;
-  align-items: center;
   background-color: #fafafa;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 `;
 
 const Title = styled.h1`
   padding: 0 1em;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 20em;
   color: #444;
   font-weight: 600;
   font-size: 60px;
@@ -83,17 +80,49 @@ const SubTitle = styled.h2`
   text-align: center;
 `;
 
+const Header = styled.div`
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  div {
+    margin-left: 1em;
+  }
+`;
+
+const AnimatedIcon = styled.div`
+  margin-bottom: 1em;
+`;
+
+const HomeWelcome = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15em;
+`;
+
 export default class Home extends Component {
 
   public render(): React.ReactNode {
     return (
       <HomeWrapper>
-        <Image src={Crown} />
-        <Shadow />
-        <Title>Delightful property planning and management</Title>
-        <SubTitle>Start by building your kingdom here</SubTitle>
-        {/* Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
-      </HomeWrapper>
+            <Header>
+              <DropDown title="Features" options={[ { label: "Team management", linkTo: "" }]}/>
+              <DropDown title="About" />
+              <Button label="Login" />
+            </Header>
+            <HomeWelcome>
+              <AnimatedIcon>
+                <Image src={Crown} />
+                <Shadow />
+              </AnimatedIcon>
+              <Title>Delightful property planning and management</Title>
+              <SubTitle>Start by building your kingdom here</SubTitle>
+            </HomeWelcome>
+            {/* Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
+        </HomeWrapper>
     );
   }
 }
