@@ -1190,10 +1190,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
-"@gavive/empire@^1.2.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@gavive/empire/-/empire-1.3.0.tgz#ab2eea5bfcf4f14d9e257fb4bc72ce060f9d0bf0"
-  integrity sha512-HRJSQrEcsC7F5KLOJxCdxLnvP8CVPj+sRcbJHzxhkkcJr4UiRfvPdyQHCZQ2Hf3ZBpbw60T1BZyhEEJwMcNtBw==
+"@gavive/empire@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@gavive/empire/-/empire-1.4.0.tgz#ef07a14d0ae6db5cadecd786b0ba660079ec3f35"
+  integrity sha512-t39SrbhkcdKoeaA7tElHzDlmLCh//P4xdLkTfB6e/hlrCKTrV0D2imsJ4FXJJPixEFHZZp/j+YrurD54bDqrLQ==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
