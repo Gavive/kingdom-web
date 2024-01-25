@@ -3,7 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { Landing } from "./views/landing";
 import { NotFound } from "./views/notFound";
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
@@ -12,12 +12,10 @@ const App: React.FC = () => {
   );
 };
 
-const WrapperApp: React.FC = () => {
+export const WrapperApp: React.FC = () => {
   return (
     <HashRouter>
       <App />
     </HashRouter>
   );
 };
-
-export default WrapperApp;
